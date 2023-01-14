@@ -7,8 +7,6 @@ import twitter from '../assets/twitter.svg';
 import instagram from '../assets/instagram.svg';
 import { FaLinkedin } from 'react-icons/fa'
 
-// utils
-import api from '../utils/api';
 
 export default function Footer({ form_ref }){
     const [ toggle_form, set_toggle_form ] = useState(false);
@@ -19,7 +17,9 @@ export default function Footer({ form_ref }){
 
     const handle_submit = async (e) => {
         e.preventDefault();
-        // set_loading(true)
+        set_loading(true);
+        set_error(false);
+        set_form_submitted(true);
         // await api.submit({email})
         //     .then(()=> {
         //         set_form_submitted(true);
