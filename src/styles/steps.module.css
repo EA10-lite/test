@@ -1,0 +1,98 @@
+.container {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 17rem 0 12.5rem;
+    margin-top: -8.5rem;
+    position: relative;
+    z-index: -10;
+}
+
+.h1 {
+    font-size: 2.25rem;
+    margin: auto;
+    margin-bottom: 4.375rem;
+    text-align: center;
+    width: 72%;
+}
+
+
+.field {
+    margin-bottom: 3.75rem;
+}
+
+.label {
+    margin-bottom: 1rem;
+}
+
+.card {
+    margin: auto;
+    width: 80%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {   
+    .textBox {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1.875rem;
+    }
+}
+@media screen and (min-width: 48em) {
+    .h1, .text {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .row {
+        width: 83%;
+        margin-left: 11%;
+        margin-right: 6%;
+    }
+
+    .field {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .textBox {
+        width: 50%;
+    }
+    .card {
+        width: 47%;
+    }
+}
+
+@media screen and (min-width: 84.375em) {
+    .h1, .text{
+        font-size: 4.5rem;
+        line-height: 8.875rem;
+    }
+
+    .text {
+        line-height: 5.626rem;
+    }
+}
+
+@media screen and (min-width: 94.5em) {
+    .container {
+        margin-top: -9vw;
+        padding: 18vw 0 13vw;
+    }
+    .h1 {
+        font-size: 5.29vw;
+        line-height: 9.92vw;
+        margin-bottom: 5.16vw;
+    }
+    .text {
+        font-size: 5.29vw;
+        line-height: 5.95vw;
+    }
+    .field {
+        margin-bottom: 4vw;
+    }
+}

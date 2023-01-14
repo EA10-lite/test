@@ -1,0 +1,97 @@
+.container {
+    z-index: 1;
+    position: relative;
+} 
+
+.content {
+    align-items: center;
+    border-radius: 25px;
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+
+    background-image: url("../assets/BG-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.field {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    min-width: 100%;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3rem;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    .h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+@media screen and (min-width: 64em) {
+    .h2 {
+        font-size: 5.625rem;
+        line-height: 7.5rem;
+    }
+}
+@media screen and (min-width: 85.375em) {
+    .h2 {
+        font-size: 7.5rem;
+        line-height: 9.375rem;
+    }
+}
+
+@media screen and (min-width: 90em) {
+    .h2 {
+        font-size: 8.375rem;
+        line-height: 8.9375rem;
+    }
+}
+@media screen and (min-width: 94.5em) {
+    .h2 {
+        font-size: 7.9vw;
+        line-height: 9.9vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 40px 0;
+    }
+    .h2 {
+        opacity: 0.4;
+        font-size: 3.125rem;
+        line-height: 3.6875rem;
+        text-align: center;
+        transition: opacity 250ms;
+    }
+    .field {
+        display: block;
+        height: auto;
+        margin: 40px auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .field {
+        padding: 0 40px;
+    }
+}

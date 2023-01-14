@@ -1,0 +1,38 @@
+.view {
+    animation: flow-in 1.5s linear 1;
+    animation-fill-mode: forwards;
+    /* opacity: 0; */
+}
+
+.cursor {
+    background-color: #1AA6B7;
+    /*box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.4);*/
+    border-radius: 50%;
+    height: 25px;
+    margin: -10px 0 0 -10px;
+    pointer-events: none;
+    position: fixed;
+    user-select: none;
+    width: 25px;
+    will-change: transform;
+    z-index: 1000;
+}
+
+
+
+
+@keyframes flow-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 94.5em) {
+    .cursor {
+        width: 1.1vw;
+        height: 1.1vw;
+    }
+}

@@ -1,0 +1,277 @@
+
+.container {
+    background-color: #FFFFFF;
+    border-radius: 3rem 3rem 0 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: -150px;
+    position: relative;
+    z-index: 1;
+}
+
+.heroFooter {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url('../assets/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+}
+
+.h1 {
+    color: #1AA6B7;
+    font-size: 2rem;
+    line-height: 2.6875rem;
+    margin: auto;
+    margin-bottom: 3.125rem;
+    width: 67%;
+}
+
+.downloadBtn {
+    background-color: #1AA6B7;
+    border: none;
+    border-radius: 133.33px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1.4375rem 4rem;
+    outline: none;
+}
+.waitlistForm {
+    background-color: #1AA6B7;
+    border-radius: 133.33px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0.4375rem 0.875rem;
+    width: 100%;
+}
+.waitlistForm form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.waitlistForm button {
+    background: #F8FAFF;
+    border: 0;
+    border-radius: 133.3333333333px;
+    color: #1AA6B7;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: inherit;
+    outline: none;
+    padding: 1rem 2rem;
+    z-index: 2;
+}
+.waitlistForm input {
+    background-color: transparent;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    outline: none;
+    padding: 1rem 1.5rem;
+    width: 100%;
+}
+.waitlistForm input::placeholder, .waitlistForm input {
+    color: #F8FAFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.footer {
+    background-color: #FFFFFF;
+    padding: 1.25rem 9%;
+    width: 100%;
+    height: min-content;
+}
+
+.listItemsContainer {
+    align-items: center;
+    display: flex;
+}
+
+.itemsContainer {
+    margin: 0 1rem;
+}
+
+.itemsContainer.start {
+    margin-left: 0;
+}
+.itemsContainer.end {
+    margin-right: 0;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+
+.scale_up_hor_center {
+	-webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+
+@media screen and (min-width: 48em) {
+    .h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .footer {
+        padding: 1.5rem 9%;
+    }
+}
+
+@media screen and (min-width:83.375em) {
+    /* .heroFooter {
+        height: 997px;
+    } */
+    .h1 {
+        font-size: 4rem;
+        line-height: 4.875rem;
+        margin-bottom: 4rem;
+    }
+    .downloadBtn {
+        padding: 1.5625rem 4.375rem;
+    }
+    .footer {
+        padding: 2.5rem 9%;
+    }
+    .icon {
+        font-size: 2.25rem;
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .itemsContainer {
+        margin: 0 32px;
+    }
+    .waitlistForm {
+        padding: 0.5rem 0.6rem;
+    }
+    .waitlistForm input {
+        padding: 1.125rem 1.625rem;
+    }
+
+    .waitlistForm button {
+        padding: 1.125rem 2.25rem;
+    }
+}
+
+@media screen and (min-width: 90em) {
+    .h1 {
+        font-size: 5rem;
+        line-height: 5.625rem;
+    }
+    .downloadBtn {
+        border-radius: 9.3vw;
+        font-size: 2.1875rem;
+        line-height: 3.25rem;
+        padding: 2.1875rem 5.625rem;
+    }
+    .icon {
+        height: 1.8vw;
+        width: 1.8vw;
+    }
+    .itemsContainer {
+        margin: 0 2.1vw;
+    }
+    .waitlistForm {
+        border-radius: 9.3vw;
+        width: 67%;
+    }
+}
+@media screen and (min-width: 94.5em) {
+    .container {
+        border-top-left-radius: 2.65vw;
+        border-top-right-radius: 2.65vw;
+    }
+    .h1 {
+        font-size: 5.3vw;
+        line-height: 6vw;
+        margin-bottom: 6.5vw;
+    }
+    .downloadBtn {
+        border-radius: 3.65vw;
+        border-radius: 8.82vw;
+        font-size: 2.3vw;
+        line-height: 3.4vw;
+        padding: 2.3vw 6vw;
+    }
+    .icon {
+        font-size: 2.4vw;
+        height: 2.4vw;
+        width: 2.4vw;
+    }
+    .waitlistForm {
+        border-radius: 8.82vw;
+        padding: 0.5vw 1vw;
+    }
+    .waitlistForm button {
+        padding: 1.8vw 4vw;
+        font-size: 1.4vw;
+    }
+    .waitlistForm input {
+        font-size: 2.3vw;
+        padding: 1.8vw 2.3vw;
+    }
+    .waitlistForm input::placeholder {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .h1, .waitlistForm {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .downloadBtn {
+        padding: 1rem 3rem;
+        font-size: 1rem;
+    }
+    .waitlistForm {
+        padding: 0.25rem 0.425rem;
+    }
+    .waitlistForm button {
+        font-size: 0.875rem;
+        padding: 0.75rem 2rem;
+    }
+    .waitlistForm input {
+        padding: 0.75rem 1rem;
+    }
+    .waitlistForm input, .waitlistForm input::placeholder  {
+        font-size: 1rem;
+    }
+}
