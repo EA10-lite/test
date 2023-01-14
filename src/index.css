@@ -19,7 +19,7 @@ body {
 
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 a {
@@ -44,7 +44,7 @@ ul {
 }
 
 
-
+/* 
 [data-scrollbar] {
   display: block;
   position: relative;
@@ -97,4 +97,4 @@ ul {
   height: 8px;
   background: white;
   border-radius: 0;
-}
+} */
