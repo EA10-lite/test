@@ -19,18 +19,18 @@ export default function Footer({ form_ref }){
 
     const handle_submit = async (e) => {
         e.preventDefault();
-        set_loading(true)
-        await api.submit({email})
-            .then(()=> {
-                set_form_submitted(true);
-                set_toggle_form(false);
-                set_email('');
-            })
-            .catch((err)=> {
-                set_loading(false);
-                set_error(true);
-            })
-            .finally(()=> set_loading(false));
+        // set_loading(true)
+        // await api.submit({email})
+        //     .then(()=> {
+        //         set_form_submitted(true);
+        //         set_toggle_form(false);
+        //         set_email('');
+        //     })
+        //     .catch((err)=> {
+        //         set_loading(false);
+        //         set_error(true);
+        //     })
+        //     .finally(()=> set_loading(false));
     }
     const handle_click = () => {
         if(form_submitted) return;
